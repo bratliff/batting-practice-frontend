@@ -1,0 +1,8 @@
+nav p {
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav p:hover {
+  text-decoration: underline;
+}
