@@ -1,0 +1,135 @@
+body {
+    font-family: "Lato", "Arial", "Helvetica", sans-serif;
+    margin: 0;
+    color:#9b9b9b;
+}
+
+h1, h2 {
+    color:#fe6800;
+}
+
+button {
+    background:#0db6e2;
+    padding:10px;
+    font-size:1rem;
+    font-weight:800;
+    color:white;
+    border-radius: 10px;
+    border:none;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #FC0;
+    > div {
+    	height:240px;
+    	padding:10px;
+        img {
+            float:right;
+        }
+    }
+    .just-the-terms-container {
+        width: 45%;
+        border:1px solid #F00;
+        border-right: 1px solid #333;
+        text-align:center;
+        nav {
+            margin:0 auto;
+            width:70%;
+            text-align:left;
+            border:1px solid #35F;
+            h1 {
+                font-size:1.7rem;
+                margin-bottom:0;
+                padding-bottom:0;
+            }
+            ul {
+                padding-left:0;
+                li {
+                    list-style-type:none;
+                    font-size:1.4rem;
+                    margin:10px auto;
+                    color:#9b9b9b;
+                    p {
+                        margin:0;
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+    }
+    .just-the-terms-content {
+        font-size:1rem;
+        display:flex;
+        align-items:flex-end;
+        width: 45%;
+        text-align:center;
+        border:1px solid #F00;
+        h1 {
+            font-size:1.4rem;
+            margin-bottom:10px;
+        }
+        h2 {
+            font-size:1rem;
+            margin:0;
+        }
+        p {
+            margin-top:0;
+            font-size:1rem;
+        }
+        .inner-div {
+            border:1px solid #35F;
+            text-align:left;
+            width:50%;
+        }
+        .img-div {
+            width:30%;
+            border:1px solid #333;
+            img {
+                width:100%;
+            }
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+    }
+}
+
+#howbox {
+    position:absolute;
+    width:180px;
+    height:170px;
+    background:#fe6800;
+    color:white;
+    font-size:0.8rem;
+    right:30px;
+    top:30px;
+    border-radius: 10px;
+    h2 {
+        margin:0;
+        color:#fff;
+    }
+}
+
+nav p {
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav p:hover {
+    text-decoration: underline;
+}
