@@ -16,6 +16,7 @@ button {
     color:white;
     border-radius: 10px;
     border:none;
+    cursor:pointer;
 }
 
 .container {
@@ -38,17 +39,17 @@ button {
         }
     }
     .just-the-terms-container {
-        width: 45%;
-        border:1px solid #F00;
+        width: 35%;
+        //border:1px solid #F00;
         border-right: 1px solid #333;
         text-align:center;
         nav {
             margin:0 auto;
             width:70%;
             text-align:left;
-            border:1px solid #35F;
+            //border:1px solid #35F;
             h1 {
-                font-size:1.7rem;
+                font-size:1.8rem;
                 margin-bottom:0;
                 padding-bottom:0;
             }
@@ -56,8 +57,8 @@ button {
                 padding-left:0;
                 li {
                     list-style-type:none;
-                    font-size:1.4rem;
-                    margin:10px auto;
+                    font-size:1.6rem;
+                    margin:15px auto;
                     color:#9b9b9b;
                     p {
                         margin:0;
@@ -76,9 +77,9 @@ button {
         font-size:1rem;
         display:flex;
         align-items:flex-end;
-        width: 45%;
+        width: 55%;
         text-align:center;
-        border:1px solid #F00;
+        //border:1px solid #F00;
         h1 {
             font-size:1.4rem;
             margin-bottom:10px;
@@ -92,13 +93,14 @@ button {
             font-size:1rem;
         }
         .inner-div {
-            border:1px solid #35F;
+            //border:1px solid #35F;
             text-align:left;
-            width:50%;
+            width:40%;
         }
         .img-div {
-            width:30%;
-            border:1px solid #333;
+            width:35%;
+            cursor:pointer;
+            //border:1px solid #333;
             img {
                 width:100%;
             }
@@ -116,12 +118,18 @@ button {
     background:#fe6800;
     color:white;
     font-size:0.8rem;
-    right:30px;
+    right:10px;
     top:30px;
     border-radius: 10px;
+    display:none;
     h2 {
         margin:0;
         color:#fff;
+    }
+    &:before {
+        content: url("../images/speech-arrow.png");
+        margin-top:180px;
+        position:absolute;
     }
 }
 

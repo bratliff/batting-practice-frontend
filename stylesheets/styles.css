@@ -13,7 +13,8 @@ button {
   font-weight: 800;
   color: white;
   border-radius: 10px;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .container {
   display: -webkit-box;
@@ -33,25 +34,23 @@ button {
     .container > div img {
       float: right; }
   .container .just-the-terms-container {
-    width: 45%;
-    border: 1px solid #F00;
+    width: 35%;
     border-right: 1px solid #333;
     text-align: center; }
     .container .just-the-terms-container nav {
       margin: 0 auto;
       width: 70%;
-      text-align: left;
-      border: 1px solid #35F; }
+      text-align: left; }
       .container .just-the-terms-container nav h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         margin-bottom: 0;
         padding-bottom: 0; }
       .container .just-the-terms-container nav ul {
         padding-left: 0; }
         .container .just-the-terms-container nav ul li {
           list-style-type: none;
-          font-size: 1.4rem;
-          margin: 10px auto;
+          font-size: 1.6rem;
+          margin: 15px auto;
           color: #9b9b9b; }
           .container .just-the-terms-container nav ul li p {
             margin: 0; }
@@ -62,9 +61,8 @@ button {
     font-size: 1rem;
     display: flex;
     align-items: flex-end;
-    width: 45%;
-    text-align: center;
-    border: 1px solid #F00; }
+    width: 55%;
+    text-align: center; }
     .container .just-the-terms-content h1 {
       font-size: 1.4rem;
       margin-bottom: 10px; }
@@ -75,12 +73,11 @@ button {
       margin-top: 0;
       font-size: 1rem; }
     .container .just-the-terms-content .inner-div {
-      border: 1px solid #35F;
       text-align: left;
-      width: 50%; }
+      width: 40%; }
     .container .just-the-terms-content .img-div {
-      width: 30%;
-      border: 1px solid #333; }
+      width: 35%;
+      cursor: pointer; }
       .container .just-the-terms-content .img-div img {
         width: 100%; }
     @media (max-width: 700px) {
@@ -94,12 +91,17 @@ button {
   background: #fe6800;
   color: white;
   font-size: 0.8rem;
-  right: 30px;
+  right: 10px;
   top: 30px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: none; }
   #howbox h2 {
     margin: 0;
     color: #fff; }
+  #howbox:before {
+    content: url("../images/speech-arrow.png");
+    margin-top: 180px;
+    position: absolute; }
 
 nav p {
   display: inline-block;
