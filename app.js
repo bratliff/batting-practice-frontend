@@ -19,12 +19,35 @@
       cartoonImgSrc: 'images/freelancer_illustrations-19.svg'
     }
   };
+
+  var howboxPos = function() {
+    var howboxTop = $('.img-div').offset().top - 80;
+    var howboxLeft = $('.img-div').offset().left + $('.img-div').width() - 50;
+    $("#howbox").css({'top':howboxTop,'left':howboxLeft, 'position':'absolute'});
+  }
+
   $(document).ready(function () {
 
     var closed = true;
     $(".container").css("height", $(window).height());
-    var howboxTop = $('.img-div').offset().top - 300;
-    $("#howbox").css({'top':howboxTop});
+
+    // set initial position of the "How it Works"
+    
+    if($(window).width() > 780) {
+      var howboxTop = $('.img-div').offset().top - 300;
+      var howboxLeft = $('.img-div').offset().left + $('.img-div').width() - 50;
+      $("#howbox").css({'top':howboxTop,'left':howboxLeft});
+    } else {
+        $("#howbox").css({'top':'-210px','left':'', 'position':'relative'});
+      }
+
+    $(window).resize(function(){
+      if($(window).width() > 780) {
+        howboxPos();
+      } else {
+        $("#howbox").css({'top':'-210px','left':'', 'position':'relative'});
+      }
+    });
 
     $('nav p').on('click', function () {
       closed = true;
@@ -48,10 +71,10 @@
       $('#howbox').html('<h2>How it Works</h2>' + selectedSectionData.howItWorksText )
       $('.howbutton, .howperson').click(function(){
          if(closed) {
-            $('#howbox').fadeIn();
+            $('#howbox').css({'display':'inline-block'});
             closed = false;
          } else {
-            $('#howbox').fadeOut();
+            $('#howbox').css({'display':'none'});
             closed = true;
          }
       });

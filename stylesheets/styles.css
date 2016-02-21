@@ -27,7 +27,11 @@ button {
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 1px solid #FC0; }
+  position: relative; }
+  @media (max-width: 950px) {
+    .container {
+      width: 100%;
+      display: block; } }
   .container > div {
     height: 240px;
     padding: 10px; }
@@ -41,22 +45,41 @@ button {
       margin: 0 auto;
       width: 70%;
       text-align: left; }
+      @media (max-width: 950px) {
+        .container .just-the-terms-container nav {
+          text-align: center;
+          border-bottom: 1px solid #9b9b9b;
+          width: 90%; } }
       .container .just-the-terms-container nav h1 {
         font-size: 1.8rem;
         margin-bottom: 0;
         padding-bottom: 0; }
       .container .just-the-terms-container nav ul {
         padding-left: 0; }
+        @media (max-width: 950px) {
+          .container .just-the-terms-container nav ul {
+            display: inline-block; } }
         .container .just-the-terms-container nav ul li {
           list-style-type: none;
           font-size: 1.6rem;
           margin: 15px auto;
           color: #9b9b9b; }
+          @media (max-width: 950px) {
+            .container .just-the-terms-container nav ul li {
+              float: left;
+              margin-left: 40px;
+              font-size: 1.4rem; } }
+          @media (max-width: 780px) {
+            .container .just-the-terms-container nav ul li {
+              float: none;
+              margin-left: 0;
+              font-size: 1.2rem; } }
           .container .just-the-terms-container nav ul li p {
             margin: 0; }
-    @media (max-width: 700px) {
+    @media (max-width: 950px) {
       .container .just-the-terms-container {
-        width: 100%; } }
+        width: 100%;
+        border-right: none; } }
   .container .just-the-terms-content {
     font-size: 1rem;
     display: flex;
@@ -75,18 +98,31 @@ button {
     .container .just-the-terms-content .inner-div {
       text-align: left;
       width: 40%; }
+      @media (max-width: 780px) {
+        .container .just-the-terms-content .inner-div {
+          width: 80%;
+          text-align: center;
+          margin: 0 auto; } }
     .container .just-the-terms-content .img-div {
       width: 35%;
       cursor: pointer; }
       .container .just-the-terms-content .img-div img {
         width: 100%; }
-    @media (max-width: 700px) {
+      @media (max-width: 780px) {
+        .container .just-the-terms-content .img-div {
+          width: 50%;
+          margin-top: 110px; } }
+    @media (max-width: 950px) {
       .container .just-the-terms-content {
         width: 100%; } }
+    @media (max-width: 780px) {
+      .container .just-the-terms-content {
+        width: 100%;
+        display: block; } }
 
 #howbox {
   position: absolute;
-  width: 180px;
+  width: 160px;
   height: 170px;
   background: #fe6800;
   color: white;
@@ -94,6 +130,8 @@ button {
   right: 10px;
   top: 30px;
   border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
   display: none; }
   #howbox h2 {
     margin: 0;
@@ -102,6 +140,11 @@ button {
     content: url("../images/speech-arrow.png");
     margin-top: 180px;
     position: absolute; }
+  @media (max-width: 780px) {
+    #howbox {
+      margin-left: 40%;
+      margin-top: -40px;
+      font-size: 0.8em; } }
 
 nav p {
   display: inline-block;
