@@ -125,6 +125,9 @@ button {
             text-align:left;
             width:40%;
             //border:1px solid #000;
+            @media (max-width: $first-breakpoint) {
+                margin-left:10%;
+            }
             @media (max-width: $second-breakpoint) {
                 width:80%;
                 text-align:center;
@@ -145,6 +148,7 @@ button {
         }
         @media (max-width: $first-breakpoint) {
             width: 100%;
+            align-items:center;
         }
         @media (max-width: $second-breakpoint) {
             width: 100%;
@@ -176,10 +180,12 @@ button {
         position:absolute;
     }
     @media (max-width: $second-breakpoint) {
-        //position:relative;
         margin-left:40%;
-        margin-top:-40px;
+        margin-top:-140px;
         font-size:0.8em;
+    }
+    @media (max-width: 600px) {
+        margin-top:-50px;
     }
 }
 

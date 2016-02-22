@@ -98,6 +98,9 @@ button {
     .container .just-the-terms-content .inner-div {
       text-align: left;
       width: 40%; }
+      @media (max-width: 950px) {
+        .container .just-the-terms-content .inner-div {
+          margin-left: 10%; } }
       @media (max-width: 780px) {
         .container .just-the-terms-content .inner-div {
           width: 80%;
@@ -114,7 +117,8 @@ button {
           margin-top: 110px; } }
     @media (max-width: 950px) {
       .container .just-the-terms-content {
-        width: 100%; } }
+        width: 100%;
+        align-items: center; } }
     @media (max-width: 780px) {
       .container .just-the-terms-content {
         width: 100%;
@@ -143,8 +147,11 @@ button {
   @media (max-width: 780px) {
     #howbox {
       margin-left: 40%;
-      margin-top: -40px;
+      margin-top: -140px;
       font-size: 0.8em; } }
+  @media (max-width: 600px) {
+    #howbox {
+      margin-top: -50px; } }
 
 nav p {
   display: inline-block;
