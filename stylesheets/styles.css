@@ -28,7 +28,7 @@ button {
   margin: 0;
   padding: 0;
   position: relative; }
-  @media (max-width: 950px) {
+  @media screen and (max-width: 950px) {
     .container {
       width: 100%;
       display: block; } }
@@ -45,7 +45,7 @@ button {
       margin: 0 auto;
       width: 70%;
       text-align: left; }
-      @media (max-width: 950px) {
+      @media screen and (max-width: 950px) {
         .container .just-the-terms-container nav {
           text-align: center;
           border-bottom: 1px solid #9b9b9b;
@@ -56,7 +56,7 @@ button {
         padding-bottom: 0; }
       .container .just-the-terms-container nav ul {
         padding-left: 0; }
-        @media (max-width: 950px) {
+        @media screen and (max-width: 950px) {
           .container .just-the-terms-container nav ul {
             display: inline-block; } }
         .container .just-the-terms-container nav ul li {
@@ -64,19 +64,19 @@ button {
           font-size: 1.6rem;
           margin: 15px auto;
           color: #9b9b9b; }
-          @media (max-width: 950px) {
+          @media screen and (max-width: 950px) {
             .container .just-the-terms-container nav ul li {
               float: left;
               margin-left: 40px;
               font-size: 1.4rem; } }
-          @media (max-width: 780px) {
+          @media screen and (max-width: 780px) {
             .container .just-the-terms-container nav ul li {
               float: none;
               margin-left: 0;
               font-size: 1.2rem; } }
           .container .just-the-terms-container nav ul li p {
             margin: 0; }
-    @media (max-width: 950px) {
+    @media screen and (max-width: 950px) {
       .container .just-the-terms-container {
         width: 100%;
         border-right: none; } }
@@ -98,10 +98,10 @@ button {
     .container .just-the-terms-content .inner-div {
       text-align: left;
       width: 40%; }
-      @media (max-width: 950px) {
+      @media screen and (max-width: 950px) {
         .container .just-the-terms-content .inner-div {
           margin-left: 10%; } }
-      @media (max-width: 780px) {
+      @media screen and (max-width: 780px) {
         .container .just-the-terms-content .inner-div {
           width: 80%;
           text-align: center;
@@ -111,15 +111,15 @@ button {
       cursor: pointer; }
       .container .just-the-terms-content .img-div img {
         width: 100%; }
-      @media (max-width: 780px) {
+      @media screen and (max-width: 780px) {
         .container .just-the-terms-content .img-div {
           width: 50%;
           margin-top: 110px; } }
-    @media (max-width: 950px) {
+    @media screen and (max-width: 950px) {
       .container .just-the-terms-content {
         width: 100%;
         align-items: center; } }
-    @media (max-width: 780px) {
+    @media screen and (max-width: 780px) {
       .container .just-the-terms-content {
         width: 100%;
         display: block; } }
@@ -144,12 +144,12 @@ button {
     content: url("../images/speech-arrow.png");
     margin-top: 180px;
     position: absolute; }
-  @media (max-width: 780px) {
+  @media screen and (max-width: 780px) {
     #howbox {
       margin-left: 40%;
       margin-top: -140px;
       font-size: 0.8em; } }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     #howbox {
       margin-top: -50px; } }
 

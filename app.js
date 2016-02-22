@@ -35,7 +35,7 @@
     
     if($(window).width() > 780) {
       var howboxTop = $('.img-div').offset().top - 300;
-      var howboxLeft = $('.img-div').offset().left + $('.img-div').width() - 70;
+      var howboxLeft = $('.img-div').offset().left + $('.img-div').width() - 50;
       $("#howbox").css({'top':howboxTop,'left':howboxLeft});
     } else {
         $("#howbox").css({'top':'-210px','left':'', 'position':'relative'});

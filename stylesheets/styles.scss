@@ -37,7 +37,7 @@ button {
     margin: 0;
     padding: 0;
     position:relative;
-    @media (max-width: $first-breakpoint) {
+    @media screen and (max-width: $first-breakpoint) {
         width: 100%;
         display:block;
     }
@@ -57,7 +57,7 @@ button {
             margin:0 auto;
             width:70%;
             text-align:left;
-            @media (max-width: $first-breakpoint) {
+            @media screen and (max-width: $first-breakpoint) {
                 text-align:center;
                 border-bottom:1px solid $grey;
                 width:90%;
@@ -70,7 +70,7 @@ button {
             }
             ul {
                 padding-left:0;
-                @media (max-width: $first-breakpoint) {
+                @media screen and (max-width: $first-breakpoint) {
                     display:inline-block;
                 }
                 li {
@@ -78,12 +78,12 @@ button {
                     font-size:1.6rem;
                     margin:15px auto;
                     color:#9b9b9b;
-                    @media (max-width: $first-breakpoint) {
+                    @media screen and (max-width: $first-breakpoint) {
                         float:left;
                         margin-left:40px;
                         font-size:1.4rem;
                     }
-                    @media (max-width: $second-breakpoint) {
+                    @media screen and (max-width: $second-breakpoint) {
                         float:none;
                         margin-left:0;
                         font-size:1.2rem;
@@ -97,7 +97,7 @@ button {
                 }
             }
         }
-        @media (max-width: $first-breakpoint) {
+        @media screen and (max-width: $first-breakpoint) {
             width: 100%;
             border-right: none;
         }
@@ -125,10 +125,10 @@ button {
             text-align:left;
             width:40%;
             //border:1px solid #000;
-            @media (max-width: $first-breakpoint) {
+            @media screen and (max-width: $first-breakpoint) {
                 margin-left:10%;
             }
-            @media (max-width: $second-breakpoint) {
+            @media screen and (max-width: $second-breakpoint) {
                 width:80%;
                 text-align:center;
                 margin:0 auto;
@@ -141,16 +141,16 @@ button {
             img {
                 width:100%;
             }
-            @media (max-width: $second-breakpoint) {
+            @media screen and (max-width: $second-breakpoint) {
                 width:50%;
                 margin-top:110px;
             }
         }
-        @media (max-width: $first-breakpoint) {
+        @media screen and (max-width: $first-breakpoint) {
             width: 100%;
             align-items:center;
         }
-        @media (max-width: $second-breakpoint) {
+        @media screen and (max-width: $second-breakpoint) {
             width: 100%;
             display:block;
         }
@@ -179,12 +179,12 @@ button {
         margin-top:180px;
         position:absolute;
     }
-    @media (max-width: $second-breakpoint) {
+    @media screen and (max-width: $second-breakpoint) {
         margin-left:40%;
         margin-top:-140px;
         font-size:0.8em;
     }
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         margin-top:-50px;
     }
 }
