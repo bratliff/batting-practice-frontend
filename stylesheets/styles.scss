@@ -4,6 +4,13 @@ $theme-blue : #0db6e2;
 $theme-orange : #fe6800;
 $grey : #9b9b9b;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 body {
     font-family: "Lato", "Arial", "Helvetica", sans-serif;
     margin: 0;
@@ -15,12 +22,12 @@ h1, h2 {
 }
 
 button {
+    @include border-radius(10px);
     background:$theme-blue;
     padding:10px;
     font-size:1rem;
     font-weight:800;
     color:white;
-    border-radius: 10px;
     border:none;
     cursor:pointer;
 }
@@ -158,6 +165,7 @@ button {
 }
 
 #howbox {
+    @include border-radius(10px);
     position:absolute;
     width:160px;
     height:170px;
@@ -166,7 +174,6 @@ button {
     font-size:0.8rem;
     right:10px;
     top:30px;
-    border-radius: 10px;
     display:inline-block;
     padding:10px;
     display:none;
